@@ -30,19 +30,19 @@ const RegisterPage = () => {
     }
 
   return (
-    <div className='flex h-screen justify-center items-center tlext-white bg-app'>
+    <div className='flex h-screen justify-center items-center text-white bg-app'>
         <form onSubmit={(e)=>{
             submitHandler(e);
         }}
         action="" 
-        className='flex flex-col shadow-2xl shadow-black w-100 h-100 rounded-xl px-10  py-15 bg-panel border border-border justify-between '>
-            <h1 className='text-4xl text-center'>Registration</h1>
+        className='flex flex-col shadow-2xl shadow-black w-70 h-80 lg:w-100 lg:h-100 rounded-xl px-7 lg:px-10 py-7 lg:py-15 bg-panel border border-border justify-between '>
+            <h1 className='lg:text-4xl text-3xl text-center  pb-4 lg:pb-0'>Registration</h1>
             
             <input value={username}
             onChange={(e)=>{
                 setUsername(e.target.value);
             }}
-             className='bg-app border border-border text-ink-primary placeholder:text-ink-placeholder rounded px-1 py-1' type="text" id='username' placeholder='username...'/>
+             className='bg-app border  border-border  text-ink-primary placeholder:text-ink-placeholder rounded px-1 py-1' type="text" id='username' placeholder='username...'/>
             <input value={email} 
             onChange={(e)=>{
                 setEmail(e.target.value);
@@ -54,9 +54,9 @@ const RegisterPage = () => {
             }}
              className='bg-app border border-border text-ink-primary placeholder:text-ink-placeholder rounded px-1 py-1' type="password" id="password" placeholder='password...' />
           
-            <button type='submit' className=' bg-accent hover:bg-accent-hover text-white py-2 rounded px-2 text-xl active:scale-95 '>Register</button>
+            <button type='submit' className=' bg-accent hover:bg-accent-hover text-white p-1 lg:py-2 rounded lg:px-2 text-xl active:scale-95 '>Register</button>
             <div className='flex gap-2 justify-center'>
-                <h4>Already have an account?</h4>
+                <h4 className='text-sm lg:text-xl'>Already have an account?</h4>
                 <Link to={"/login"} className='text-blue-400 underline hover:text-indigo-700'>Login</Link>
             </div>
         </form>

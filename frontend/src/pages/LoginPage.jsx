@@ -35,8 +35,8 @@ const LoginPage = () => {
         }
         }
         action="" 
-        className='flex flex-col shadow-2xl shadow-black w-100 h-100 rounded-xl px-10  py-15 bg-panel border border-border justify-between'>
-            <h1 className='text-4xl text-center'>Login</h1>
+        className='flex flex-col shadow-2xl shadow-black w-70 h-80 lg:w-100 lg:h-100 rounded-xl px-5 py-7 lg:px-10  lg:py-15 bg-panel border border-border justify-between'>
+            <h1 className='text-3xl lg:text-4xl text-center'>Login</h1>
             
             
             <input value={email} 
@@ -50,7 +50,7 @@ const LoginPage = () => {
             }}
              className='bg-app border border-border text-ink-primary placeholder:text-ink-placeholder rounded px-1 py-1' type="password" id="password" placeholder='password...' />
           
-            <button type='submit' className='bg-accent hover:bg-accent-hover text-white py-2 rounded px-2 text-xl  active:scale-95 '>Login</button>
+            <button type='submit' className='bg-accent hover:bg-accent-hover text-white p-1 lg:py-2 rounded lg:px-2 text-xl  active:scale-95 '>Login</button>
             <div className='flex gap-2 justify-center'>
                 <h4>Don't have an account?</h4>
                 <Link to={"/"} className='text-blue-400 underline hover:text-indigo-700'>Register</Link>

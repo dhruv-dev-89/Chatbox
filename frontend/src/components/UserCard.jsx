@@ -4,7 +4,7 @@ const UserCard = ({user,setSelectedUser,onlineUsers}) => {
   return (
     <div onClick={()=>{
         setSelectedUser(user);
-    }} className='w-[70%] flex  hover:border-2 ml-17 h-15 hover:border-gray-400 rounded mb-2'>
+    }} className='w-70 flex ml-6 hover:border-2  lg:ml-17 h-15 hover:border-gray-400 rounded mb-2'>
         <div className='flex justify-center items-center w-[20%]'>
             <img className='size-10' src="src\assets\profile.png" alt="" />
         </div>

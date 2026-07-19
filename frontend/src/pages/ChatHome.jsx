@@ -67,9 +67,38 @@ const ChatHome = () => {
   },[selectedUser]);
   return (
     <div className='flex w-full h-screen bg-app text-ink-primary'>
-        <Sidebar setSelectedUser={setSelectedUser} onlineUsers={onlineUsers}/>
-        {selectedUser &&
-        <ChatArea isTyping={isTyping} onlineUsers={onlineUsers} selectedUser={selectedUser} setSelectedUser={setSelectedUser}/>}
+        <div className='hidden md:block w-80 lg:w-100'>
+          <Sidebar setSelectedUser={setSelectedUser} onlineUsers={onlineUsers}/>
+        </div>
+        <div className="hidden md:flex flex-1">
+          {selectedUser ? (
+            <ChatArea
+              isTyping={isTyping}
+              onlineUsers={onlineUsers}
+              selectedUser={selectedUser}
+              setSelectedUser={setSelectedUser}
+            />
+          ) : (
+            <div className="flex flex-1 items-center justify-center">
+              Select a chat to start messaging
+            </div>
+          )}
+        </div>
+        <div className="md:hidden w-full">
+          {!selectedUser ? (
+              <Sidebar
+                  setSelectedUser={setSelectedUser}
+                  onlineUsers={onlineUsers}
+              />
+          ) : (
+              <ChatArea
+                  isTyping={isTyping}
+                  selectedUser={selectedUser}
+                  setSelectedUser={setSelectedUser}
+                  onlineUsers={onlineUsers}
+              />
+          )}
+        </div>
     </div>
   )
 }
