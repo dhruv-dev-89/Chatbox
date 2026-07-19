@@ -11,7 +11,7 @@ const cors = require("cors");
 
 app.use(cors({
     origin: ["http://localhost:5173",
-        "https://chatbox-eight-sigma.vercel.app/"
+        "https://chatbox-eight-sigma.vercel.app"
     ],
     credentials: true
 }));
