@@ -135,9 +135,16 @@ VITE_API_URL=http://localhost:5000
 Add screenshots here
 
 - Login Page
+- <img width="1917" height="910" alt="image" src="https://github.com/user-attachments/assets/5618ae25-c3f1-4d49-955b-fbf92bd79a04" />
+
 - Register Page
+- <img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/09979ec3-8802-4dea-9355-33d1af1dffd5" />
+
 - Chat Screen
+- <img width="1917" height="910" alt="image" src="https://github.com/user-attachments/assets/8fe9946a-77ea-48bd-b1f3-f26d2cc21bcb" />
+
 - Mobile View
+<img width="772" height="1600" alt="WhatsApp Image 2026-07-20 at 4 31 42 PM" src="https://github.com/user-attachments/assets/bb0c47fa-3b35-4e3d-92e3-73880714b0bf" />
 
 ---
 
