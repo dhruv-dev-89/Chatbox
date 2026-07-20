@@ -4,15 +4,15 @@ const UserCard = ({user,setSelectedUser,onlineUsers}) => {
   return (
     <div onClick={()=>{
         setSelectedUser(user);
-    }} className='w-70 flex ml-6 hover:border-2  lg:ml-17 h-15 hover:border-gray-400 rounded mb-2'>
-        <div className='flex justify-center items-center w-[20%]'>
-            <img className='size-10' src="src\assets\profile.png" alt="" />
+    }} className='w-70 h-15 lg:h-18 lg:w-89  flex lg:items-center ml-6 hover:bg-panel rounded-xl  hover:border hover:border-border cursor-pointer justify-around mb-2 '>
+        <div>
+            <img className='self-start size-13 rounded-xl items-center ' src="/images/profile.png" alt="" />
         </div>
         <div className='w-[60%]'>
             <h1 className='truncate'>{user.username}</h1>
             <p className='truncate'>{user.lastMessage||"Start Chatting..."}</p>
         </div>
-        <div className='flex items-end pb-2'>
+        <div className='self-end pb-3'>
             <p className='text-sm'>
             {user.lastMessageTime
             ? new Date(user.lastMessageTime).toLocaleTimeString([],{

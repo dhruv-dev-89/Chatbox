@@ -20,10 +20,10 @@ const Sidebar = ({setSelectedUser,onlineUsers}) => {
     }, []);
 
   return (
-    <div className='w-full  sm:w-full h-full bg-sidebar border-r border-border'>
+    <div className='flex flex-col items-center w-full  sm:w-full h-full bg-sidebar border-r border-border'>
         <SearchBar/>
         {users.map((user)=>{
-            return <div className='flex-col justify-center items-center w-full'>
+            return <div className='flex-col justify-center  items-center w-full'>
                 <UserCard setSelectedUser={setSelectedUser} key={user._id} user={user} onlineUsers={onlineUsers}/>
             </div>
         })}
