@@ -36,7 +36,7 @@ const RegisterPage = () => {
             <div className='mr-10 flex flex-col gap-5 justify-center items-center '>
                 <h1 className='text-5xl'>💬 Chat <span className='text-indigo-400'>Box</span></h1>
                 <p className='text-gray-400 bg-white/10 rounded-2xl px-2 py-2'>Connect instantly with your friends.</p>
-                <img src="/public/images/chatimage.jpg" className='size-60 rounded-full' alt="" srcset="" />     
+                <img src="/images/chatimage.jpg" className='size-60 rounded-full' alt="" srcset="" />     
             </div>
             <div>
                 <form onSubmit={(e)=>{
