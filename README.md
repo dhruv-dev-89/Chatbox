@@ -167,7 +167,7 @@ Add screenshots here
 
 GitHub: https://github.com/dhruv-dev-89
 
-LinkedIn: [https://www.linkedin.com/in/YOUR-LINKEDIN](https://www.linkedin.com/in/dhruv-417122295/)
+LinkedIn: https://www.linkedin.com/in/dhruv-417122295
 
 ---
 
