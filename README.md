@@ -144,7 +144,7 @@ Add screenshots here
 - <img width="1917" height="910" alt="image" src="https://github.com/user-attachments/assets/8fe9946a-77ea-48bd-b1f3-f26d2cc21bcb" />
 
 - Mobile View
-<img width="772" height="900" alt="WhatsApp Image 2026-07-20 at 4 31 42 PM" src="https://github.com/user-attachments/assets/bb0c47fa-3b35-4e3d-92e3-73880714b0bf" />
+<img width="400" height="700" alt="WhatsApp Image 2026-07-20 at 4 31 42 PM" src="https://github.com/user-attachments/assets/bb0c47fa-3b35-4e3d-92e3-73880714b0bf" />
 
 ---
 
