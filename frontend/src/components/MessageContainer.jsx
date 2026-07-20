@@ -5,6 +5,8 @@ import socket from '../socket/socket';
 
 const MessageContainer = ({userChat,setUserChat,selectedUser}) => {
 
+
+    
     const bottomRef=useRef(null);
     
     const loggedInUserId = JSON.parse(localStorage.getItem("user"))._id;
@@ -53,7 +55,7 @@ const MessageContainer = ({userChat,setUserChat,selectedUser}) => {
         fetchMessage();
     },[selectedUser])
   return (
-    <div className='w-full  flex flex-col  gap-2 py-3 px-2'>
+    <div className='w-full  flex flex-col  gap-3 py-4 px-4'>
         {userChat.map((chat)=>{
             return <MessageBubble key={chat._id} text={chat.text} time={chat.createdAt} myMessage={loggedInUserId===chat.sender}/>
         })}

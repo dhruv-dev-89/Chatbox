@@ -6,7 +6,7 @@ const SearchBar = () => {
       <h2 className='self-start  text-white text-4xl  font-extrabold'>💬 Chat<span className="text-indigo-500">Box</span></h2>
       <div className="relative size-89">
           <input
-              className="w-full rounded-xl bg-panel border border-border px-4 py-3 outline-none"
+              className="w-full rounded-full bg-panel border border-border px-4 py-3 outline-none"
               placeholder="Search..."
           />
       </div>    

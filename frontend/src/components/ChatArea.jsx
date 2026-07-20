@@ -13,10 +13,10 @@ const ChatArea = ({selectedUser,onlineUsers,isTyping,setSelectedUser}) => {
         <div className='h-[10%] border-border'>
             <ChatHeader setSelectedUser={setSelectedUser} isTyping={isTyping} onlineUsers={onlineUsers} selectedUser={selectedUser}/>
         </div>
-        <div className='h-[80%] bg-panel custom-scrollbar overflow-y-auto'>
+        <div className='flex-1 bg-panel custom-scrollbar scroll-smooth overflow-y-auto'>
             <MessageContainer userChat={userChat} setUserChat={setUserChat} selectedUser={selectedUser} setSelectedUser={setSelectedUser}/>
         </div>
-        <div className='h-[12%]'>
+        <div className='h-auto'>
             <MessageInput setUserChat={setUserChat} selectedUser={selectedUser}/>
         </div> 
     </div>
