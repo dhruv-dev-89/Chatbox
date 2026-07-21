@@ -4,7 +4,7 @@ const UserCard = ({user,setSelectedUser,onlineUsers}) => {
   return (
     <div onClick={()=>{
         setSelectedUser(user);
-    }} className='w-75 ml-3   h-15 lg:gap-1 lg:h-20 lg:w-89 flex lg:items-center lg:ml-6 hover:bg-panel rounded-xl  hover:border hover:border-border cursor-pointer justify-around mb-2 '>
+    }} className='w-full   h-15 lg:gap-1 lg:h-20 lg:w-89 flex  lg:items-center  hover:bg-panel rounded-xl  hover:border hover:border-border cursor-pointer justify-around mb-2 '>
         <div>
             <img className='self-start size-13 rounded-xl items-center ' src="/images/profile.png" alt="" />
         </div>

@@ -20,7 +20,7 @@ const Sidebar = ({setSelectedUser,onlineUsers}) => {
     }, []);
 
   return (
-    <div className='flex flex-col items-center w-full  sm:w-full h-full bg-sidebar border-r border-border'>
+    <div className='flex flex-col px-4 items-center w-full  sm:w-full h-full bg-sidebar border-r border-border'>
         <SearchBar/>
         {[...users]
         .sort((a, b) => {
