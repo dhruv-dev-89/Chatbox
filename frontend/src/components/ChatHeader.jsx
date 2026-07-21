@@ -5,7 +5,7 @@ const ChatHeader = ({selectedUser,onlineUsers,isTyping,setSelectedUser}) => {
     const isOnline = onlineUsers.includes(selectedUser?._id);
   return (
     <div className='flex justify-start h-full bg-panel border-b border-border/60 text-ink-primary lg:p-3'>
-        <div className='flex  lg:ml-2 gap-3 justify-center items-center '>
+        <div className='flex  lg:ml-2  justify-center items-center '>
             <div onClick={()=>{
                 setSelectedUser(null);
             }}
@@ -15,7 +15,7 @@ const ChatHeader = ({selectedUser,onlineUsers,isTyping,setSelectedUser}) => {
             <div>
                 <img className='size-13' src="/images/profile.png" alt="" />
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col pl-1'>
                 <h1 className='text-lg font-semibold '>{selectedUser.username}</h1>
                 <p className='text-sm text-gray-400'>{isTyping?"Typing...":isOnline ? "🟢 Online" : "⚪ Offline"}</p>
             </div>

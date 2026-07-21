@@ -32,13 +32,13 @@ const RegisterPage = () => {
   return (
     <div className='flex h-screen justify-center items-center text-white bg-app'>
         
-        <div className='flex  border border-border shadow-xl rounded-2xl bg-panel/60 lg:px-15 lg:py-10'>
-            <div className='mr-10 flex flex-col gap-5 justify-center items-center '>
-                <h1 className='text-5xl'>💬 Chat <span className='text-indigo-400'>Box</span></h1>
+        <div className='flex flex-col lg:flex-row border border-border shadow-xl rounded-2xl bg-panel/60 lg:px-15 lg:py-10'>
+            <div className='lg:mr-10 flex mx-4 lg:mx-0 flex-col gap-5 justify-center items-center '>
+                <h1 className='lg:text-5xl text-4xl mt-4'>💬 Chat <span className='text-indigo-400'>Box</span></h1>
                 <p className='text-gray-400 bg-white/10 rounded-2xl px-2 py-2'>Connect instantly with your friends.</p>
-                <img src="/images/registerPage.jpg" className=' size-60 rounded-full' alt="" srcset="" />     
+                <img src="/images/registerPage.jpg" className='hidden lg:block size-60 rounded-full' alt="" srcset="" />     
             </div>
-            <div>
+            <div className='flex justify-center items-center lg:mx-0 lg:my-0 my-8'>
                 <form onSubmit={(e)=>{
                     submitHandler(e);
                 }}

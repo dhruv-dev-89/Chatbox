@@ -27,7 +27,7 @@ const Sidebar = ({setSelectedUser,onlineUsers}) => {
             return new Date(b.lastMessageTime || 0) - new Date(a.lastMessageTime || 0);
         }).
         map((user)=>{
-            return <div className='flex-col justify-center  items-center w-full'>
+            return <div className='flex-col justify-center   items-center w-full'>
                 <UserCard setSelectedUser={setSelectedUser} key={user._id} user={user} onlineUsers={onlineUsers}/>
             </div>
         })}
