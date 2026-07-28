@@ -3,9 +3,15 @@ const messageModel = require("../models/message.model")
 const userModel = require("../models/userModel")
 
 const getMyProfile=async (req,res)=>{
-    return res.json({
-        message:"welcome to your profile"
-    })
+
+    const _id = req.user.id;
+
+    const user = await userModel.findOne({_id}).select("-password")
+
+
+    return res.status(200).json({
+        user
+    });
 }
 
 const searchUsers=async (req,res)=>{
